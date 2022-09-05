@@ -1,19 +1,19 @@
-<img style="border-style: none; max-height: 9em; border-radius: 50%; margin-right: 2em;" id="photo" src="./photo.jpg" alt="profile picture" />
-
-![Photo](/picture/ava.jpg)
+<img style="border-style: none; max-height: 9em; border-radius: 50%; margin-right: 2em;" id="photo" src="./picture/ava.jpg" alt="profile picture" />
 
 # SVChVS_Glushchenkov-PIR-201
 
-1. # Glushchenkov Vadim;
+# Glushchenkov Vadim;
 
-1. # Contacts for communication:
+# Contacts for communication:
 
 - Cell:+375445532924
 - Email: vadim600000@gmail.com;
 
-1. # Brief information about yourself:
-   I am studying in the 3rd year at BRU as a software engineer. I want to learn new programming languages, frameworks, methodologies, development tools. I'm an enthusiastic, responsible and hard working IT person.;
-1. # Skills:
+# Brief information about yourself:
+
+I am studying in the 3rd year at BRU as a software engineer. I want to learn new programming languages, frameworks, methodologies, development tools. I'm an enthusiastic, responsible and hard working IT person.;
+
+# Skills:
 
 - C#
 - MSSQL
@@ -21,11 +21,11 @@
 - CSS
 - JAVA
 
-1. **Project experience cv:** [github.com]https://github.com/Bad1m/SVChVS_Glushchenkov-PIR-201.git;
+**Project experience cv:** [github.com]https://github.com/Bad1m/SVChVS_Glushchenkov-PIR-201.git;
 
-1. **English language level:** intermediate;
+**English language level:** intermediate;
 
-1. # Code
+# Code
 
 ```C#
 namespace BusSchedule.WEB.Controllers
