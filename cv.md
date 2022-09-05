@@ -1,8 +1,8 @@
-<img style="border-style: none; max-height: 9em; border-radius: 50%; margin-right: 2em;" id="photo" src="./picture/ava.jpg" alt="profile picture" />
+<img style="border-style: none; max-height: 9em; border-radius: 50%; margin-right: 2em;" id="photo" src="https://sun1.mts-by-minsk.userapi.com/s/v1/if1/NWWNhTqfuBhIsmEwyLDwBTtA46gCxgKK4_TU75LAEuN-37gl9GVkSbkE3XbFEgnUjBcPR_XC.jpg?size=200x200&quality=96&crop=320,0,1920,1920&ava=1" alt="profile picture"/>
 
 # SVChVS_Glushchenkov-PIR-201
 
-# Glushchenkov Vadim;
+# Glushchenkov Vadim
 
 # Contacts for communication:
 
@@ -21,7 +21,7 @@ I am studying in the 3rd year at BRU as a software engineer. I want to learn new
 - CSS
 - JAVA
 
-**Project experience cv:** [github.com]https://github.com/Bad1m/SVChVS_Glushchenkov-PIR-201.git;
+**Project experience cv:** https://github.com/Bad1m/SVChVS_Glushchenkov-PIR-201.git;
 
 **English language level:** intermediate;
 
