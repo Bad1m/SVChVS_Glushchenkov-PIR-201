@@ -7,11 +7,11 @@
 # Contacts for communication:
 
 - Cell:+375445532924
-- Email: vadim600000@gmail.com;
+- Email: vadim600000@gmail.com
 
 # Brief information about yourself:
 
-I am studying in the 3rd year at BRU as a software engineer. I want to learn new programming languages, frameworks, methodologies, development tools. I'm an enthusiastic, responsible and hard working IT person.;
+I am studying in the 3rd year at BRU as a software engineer. I want to learn new programming languages, frameworks, methodologies, development tools. I'm an enthusiastic, responsible and hard working IT person.
 
 # Skills:
 
@@ -21,7 +21,7 @@ I am studying in the 3rd year at BRU as a software engineer. I want to learn new
 - CSS
 - JAVA
 
-**Project experience cv:** https://github.com/Bad1m/SVChVS_Glushchenkov-PIR-201.git;
+**Project experience cv:** https://github.com/Bad1m/SVChVS_Glushchenkov-PIR-201.git
 
 **English language level:** intermediate;
 
