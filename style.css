@@ -15,6 +15,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: aliceblue;
 }
 
 h1,
@@ -44,6 +45,7 @@ a:hover {
 
 footer {
   text-align: center;
+  background-color: blanchedalmond;
 }
 
 h1,
