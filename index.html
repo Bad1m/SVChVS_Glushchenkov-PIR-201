@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cv</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <p>
+        <img
+          id="photo"
+          src="https://sun1.mts-by-minsk.userapi.com/s/v1/if1/NWWNhTqfuBhIsmEwyLDwBTtA46gCxgKK4_TU75LAEuN-37gl9GVkSbkE3XbFEgnUjBcPR_XC.jpg?size=200x200&quality=96&crop=320,0,1920,1920&ava=1"
+
+        />
+      </p>
+      <h1 id="glushchenkov-vadim">Glushchenkov Vadim</h1>
+    </header>
+    </div>
+    <nav>
+      <a href="https://github.com/Bad1m">GitHub</a>
+      <a href="vadim600000@gmail.com">Email</a>
+    </nav>
+    <div class="main__container">
+    <main>
+      <h2 id="contacts-for-communication">Contacts for communication:</h2>
+      <ul>
+        <li>Cell: +375445532924</li>
+        <li>Email: vadim600000@gmail.com</li>
+      </ul>
+      <h2 id="brief-information-about-yourself-">
+        Brief information about yourself:
+      </h2>
+      <p>
+        I am studying in the 3rd year at BRU as a software engineer. I want to
+        learn new programming languages, frameworks, methodologies, development
+        tools. I&#39;m an enthusiastic, responsible and hard working IT person.
+      </p>
+      <h2 id="skills">Skills:</h2>
+      <ul>
+        <li>C#</li>
+        <li>MSSQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+      </ul>
+      <p>
+        <strong>Project experience cv:</strong>
+        <a href="https://github.com/Bad1m/SVChVS_Glushchenkov-PIR-201.git"
+          >https://github.com/Bad1m/SVChVS_Glushchenkov-PIR-201.git</a
+        >
+      </p>
+      <p><strong>English language level:</strong> intermediate;</p>
+      <h2 id="code">Code</h2>
+      <pre><code class="lang-C#"><span class="hljs-keyword">namespace</span> <span class="hljs-title">BusSchedule.WEB.Controllers</span>
+{
+
+    [Route(<span class="hljs-string">"api/[controller]"</span>)]
+    [ApiController]
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">TransportController</span> : <span class="hljs-title">ControllerBase</span>
+    {
+        <span class="hljs-keyword">private</span> <span class="hljs-keyword">readonly</span> TransportContext context;
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">TransportController</span>(<span class="hljs-params">TransportContext context</span>)
+        </span>{
+            <span class="hljs-keyword">this</span>.context = context;
+        }
+
+        [HttpGet]
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task&lt;IEnumerable&lt;Transport&gt;&gt; Get()
+        {
+            <span class="hljs-keyword">var</span> Transports = <span class="hljs-keyword">await</span> context.Transports.ToListAsync();
+
+            <span class="hljs-keyword">return</span> Transports;
+        }
+
+        [HttpGet(<span class="hljs-string">"{id}"</span>)]
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> <span class="hljs-title">Get</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> id</span>)
+        </span>{
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"value"</span>;
+        }
+
+        [HttpPost]
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task&lt;ActionResult&gt; <span class="hljs-title">Create</span>(<span class="hljs-params">[FromBody] CreateTransportRequest <span class="hljs-keyword">value</span></span>)
+        </span>{
+            <span class="hljs-keyword">var</span> Transport = <span class="hljs-keyword">new</span> Transport
+            {
+                TransportId = <span class="hljs-keyword">value</span>.TransportId,
+                TypeOfTransport = <span class="hljs-keyword">value</span>.TypeOfTransport,
+                Capacity = <span class="hljs-keyword">value</span>.Capacity,
+                NumberOfPassengerSeats = <span class="hljs-keyword">value</span>.NumberOfPassengerSeats,
+    };
+
+            <span class="hljs-keyword">await</span> context.Transports.AddAsync(Transport);
+            <span class="hljs-keyword">await</span> context.SaveChangesAsync();
+
+            <span class="hljs-keyword">return</span> Ok();
+        }
+
+        [HttpDelete(<span class="hljs-string">"{id}"</span>)]
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">async</span> Task&lt;ActionResult&gt; <span class="hljs-title">Delete</span>(<span class="hljs-params">[FromRoute] <span class="hljs-keyword">int</span> id</span>)
+        </span>{
+            <span class="hljs-keyword">var</span> result = <span class="hljs-keyword">await</span> context.Transports
+                .FirstOrDefaultAsync(e =&gt; e.TransportId == id);
+            <span class="hljs-keyword">if</span> (result != <span class="hljs-literal">null</span>)
+            {
+                context.Transports.Remove(result);
+                <span class="hljs-keyword">await</span> context.SaveChangesAsync();
+            }
+
+            <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+        }
+    }
+  </div>
+}
+</code></pre>
+    </main>
+    <footer>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/Bad1m">https://github.com/Bad1m</a>
+      <p>
+        2022
+      </p>
+    </footer>
+  </body>
+</html>
