@@ -4,84 +4,104 @@
     <title>Aloha</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <meta name="viewport" content="width=1440" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/light.css" id="theme-link">
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   </head>
 
   <body>
-    <header>
+    <div class="wrapper">
+    <header class="header">
+      <div class="container">
       <img class="header__logo" src="img/logo.jpg" />
-      <div class="header__body">
-        <p>Projects</p>
-        <p>About</p>
-        <p>Blog</p>
-        <p>Contact</p>
+      <div class="header__burger">
+        <span></span>
       </div>
+      <nav class="header__menu">
+        <p data-i18="projects-text">Projects</p>
+        <p data-i18="about-text">About</p>
+        <p data-i18="blog-text">Blog</p>
+        <p data-i18="contact-text">Contact</p>
+      </nav>
+    </div>
+    <div class="tools">
+      <select class="change-lang">
+        <option value="en">EN</option>
+        <option value="ru">RU</option>
+      </select>
+      <button data-i18="change-text" id="theme-button" class="button">Change theme</button>
+      <div class="audio">
+        <audio src="music/1.mp3" controls></audio>
+      </div>
+      </div>
+      <script src="theme.js"></script>
     </header>
 
     <main>
       <div class="main__container">
-        <h1>Creating purpose-built brands & websites</h1>
+        <h1 data-i18="creating-text">Creating purpose-built brands & websites</h1>
         <img class="first__image" src="img/firstPhoto.jpg" />
         <div class="signature">
-          <h1>
+          <h1 data-i18="help-text">
             I help emerging brands get their footing in today's digital world.
           </h1>
-          <button class="button">See my work</button>
+          <button data-i18="see-text" class="button">See my work</button>
         </div>
         <div class="second__container">
           <img class="second__image" src="img/secondPhoto.jpg" />
-          <h2>
+          <h2 data-i18="services-text">
             My services are perfect for companies that are just getting started
           </h2>
-          <button class="second__button">Learn more</button>
+          <button data-i18="learn-text" class="second__button">Learn more</button>
         </div>
         <div class="second__container">
           <img class="third__image" src="img/thirdPhoto.jpg" />
-          <h3>I'm always on the go. Follow along!</h3>
-          <button class="third__button">@aloha</button>
+          <h3 data-i18="follow-text">I'm always on the go. Follow along!</h3>
+          <button data-i18="aloha-text" class="third__button">@aloha</button>
         </div>
         <div class="third__container">
-          <p class="whitetext">
+          <p data-i18="lorem-text" class="whitetext">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           </p>
-          <p class="fullname">Full Name, CEO at Client</p>
+          <p data-i18="name-text" class="fullname">Full Name, CEO at Client</p>
         </div>
         <div class="signature">
-          =
-          <h1>Seem like a good fit?</h1>
-          <button class="button">Let's talk!</button>
+          <h1 data-i18="fit-text">Seem like a good fit?</h1>
+          <button data-i18="talk-text" class="button">Let's talk!</button>
         </div>
       </div>
       <footer>
         <div class="footer__info">
-          <p>© Aloha</p>
-          <p>Powered by Webflow</p>
+          <p data-i18="© aloha-text">© Aloha</p>
+          <p data-i18="webflow-text">Powered by Webflow</p>
           <img class="footer__logo" src="img/footerLogo.jpg" />
         </div>
         <div class="footer__column">
-          <p>About</p>
-          <p>Contact</p>
-          <p>Licenses</p>
-          <p>Style Guide</p>
-          <p>Changelog</p>
-          <p>Password</p>
-          <p>404</p>
+          <p data-i18="about-text">About</p>
+          <p data-i18="contact-text">Contact</p>
+          <p data-i18="licenses-text">Licenses</p>
+          <p data-i18="style-text">Style Guide</p>
+          <p data-i18="changelog-text">Changelog</p>
+          <p data-i18="password-text">Password</p>
+          <p data-i18="404-text">404</p>
         </div>
         <div class="footer__column">
-          <p>Home 1</p>
-          <p>Home 2</p>
-          <p>Work 1</p>
-          <p>Work 2</p>
-          <p>Blog 1</p>
-          <p>Blog 2</p>
+          <p data-i18="home1-text">Home 1</p>
+          <p data-i18="home2-text">Home 2</p>
+          <p data-i18="work1-text">Work 1</p>
+          <p data-i18="work2-text">Work 2</p>
+          <p data-i18="blog1-text">Blog 1</p>
+          <p data-i18="blog2-text">Blog 2</p>
         </div>
         <div class="footer__column">
-          <p>Twitter</p>
-          <p>Instagram</p>
-          <p>Facebook</p>
+          <p data-i18="twitter-text">Twitter</p>
+          <p data-i18="instagram-text">Instagram</p>
+          <p data-i18="facebook-text">Facebook</p>
         </div>
       </footer>
-    </main>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
