@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aloha</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/light.css" id="theme-link">
+    <meta name="viewport" content="width=device-width" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <header class="header">
+      <div class="container">
+      <img class="header__logo" src="img/logo.jpg" />
+      <div class="header__burger">
+        <span></span>
+      </div>
+      <nav class="header__menu">
+        <p data-localization-key="projects-text"></p>
+        <p data-localization-key="about-text"></p>
+        <p data-localization-key="blog-text"></p>
+        <p data-localization-key="contact-text"></p>
+      </nav>
+    </div>
+    <div class="tools">
+      <select  type="button" class="change-lang">
+        <option data-language="en" value="en" class="languages-header__language">EN</option>
+        <option data-language="ru" value="ru" class="languages-header__language">RU</option>
+      </select>
+      <button data-localization-key="change-text" id="theme-button" class="button"></button>
+      <div class="audio">
+        <audio src="music/1.mp3" controls></audio>
+      </div>
+      </div>
+      <script src="theme.js"></script>
+    </header>
+
+    <main>
+      <div class="main__container">
+        <h1 data-localization-key="creating-text"></h1>
+        <img class="first__image" src="img/firstPhoto.jpg" />
+        <div class="signature">
+          <h1 data-localization-key="help-text"></h1>
+          <button data-localization-key="see-text" class="button"></button>
+        </div>
+        <div class="second__container">
+          <img class="second__image" src="img/secondPhoto.jpg" />
+          <h2 data-localization-key="services-text"></h2>
+          <button data-localization-key="learn-text" class="second__button"></button>
+        </div>
+        <div class="second__container">
+          <img class="third__image" src="img/thirdPhoto.jpg" />
+          <h3 data-localization-key="follow-text"></h3>
+          <button data-localization-key="aloha-text" class="third__button"></button>
+        </div>
+        <div class="third__container">
+          <p data-localization-key="lorem-text" class="whitetext"></p>
+          <p data-localization-key="name-text" class="fullname"></p>
+        </div>
+        <div class="signature">
+          <h1 data-localization-key="fit-text"></h1>
+          <button data-localization-key="talk-text" class="button"></button>
+        </div>
+      </div>
+      <footer>
+        <div class="footer__info">
+          <p data-localization-key="© aloha-text"></p>
+          <p data-localization-key="webflow-text"></p>
+          <img class="footer__logo" src="img/footerLogo.jpg" />
+        </div>
+        <div class="footer__column">
+          <p data-localization-key="about-text"></p>
+          <p data-localization-key="contact-text"></p>
+          <p data-localization-key="licenses-text"></p>
+          <p data-localization-key="style-text"></p>
+          <p data-localization-key="changelog-text"></p>
+          <p data-localization-key="password-text"></p>
+          <p data-localization-key="404-text"></p>
+        </div>
+        <div class="footer__column">
+          <p data-localization-key="home1-text"></p>
+          <p data-localization-key="home2-text"></p>
+          <p data-localization-key="work1-text"></p>
+          <p data-localization-key="work2-text"></p>
+          <p data-localization-key="blog1-text"></p>
+          <p data-localization-key="blog2-text"></p>
+        </div>
+        <div class="footer__column">
+          <p data-localization-key="twitter-text"></p>
+          <p data-localization-key="instagram-text"></p>
+          <p data-localization-key="facebook-text"></p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+    </div>
+  </main>
+  
+  </body>
+</html>

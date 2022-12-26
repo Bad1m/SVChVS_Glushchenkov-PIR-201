@@ -1,0 +1,56 @@
+.header__menu > p:hover {
+  color: white;
+}
+body {
+  background-color: #4b321d;
+}
+.change-lang {
+  background-color: #4b321d;
+}
+
+button:hover {
+  background: rgb(19, 19, 18);
+}
+
+button {
+  color: #f1f1eb;
+  border: 2px solid #f1f1eb;
+  background-color: #4b321d;
+}
+
+p.whitetext {
+  color: #1e1e1c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p.fullname {
+  color: #1e1e1c;
+}
+
+.header__link,
+p,
+h1,
+h2,
+h3 {
+  color: #f1f1eb;
+}
+
+.third__container {
+  background: #f1f1eb;
+}
+
+.footer__info > p:hover,
+.footer__column > p:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .header__burger:before,
+  .header__burger:after {
+    background-color: white;
+  }
+
+  .header__burger span {
+    background-color: white;
+  }
+}
